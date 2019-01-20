@@ -38,11 +38,12 @@
 }
 
 .post-date {
-	font-size: 10px;
+	font-size: 12px;
 }
 
 .post-body {
 	position: relative;
+	margin-top: 10px;
 	flex: 1 1 auto;
 	min-width: 0;
 	overflow: hidden;

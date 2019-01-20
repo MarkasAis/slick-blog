@@ -90,5 +90,5 @@ button.small {
     position: absolute;
     left: 0;
     bottom: -1px;
-    background: linear-gradient(rgba(0, 0, 0, 0), var(--fade-out-color));
+    background: linear-gradient(rgba(255, 255, 255, 0), var(--fade-out-color));
 }
