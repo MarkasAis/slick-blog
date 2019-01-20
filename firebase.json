@@ -1,0 +1,25 @@
+{
+  "hosting": {
+    "cleanUrls": true,
+    "public": "public",
+    "rewrites": [
+      {
+        "source": "/",
+        "function": "app"
+      },
+      {
+        "source": "/posts/*",
+        "function": "app"
+      },
+      {
+        "source": "/posts-all",
+        "function": "app"
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

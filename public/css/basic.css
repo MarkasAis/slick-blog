@@ -1,0 +1,164 @@
+body {
+	font-family: helvetica;
+	background: url("../img/background-pattern.png");
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+}
+
+nav a div {
+	display: inline-block;
+	white-space: nowrap;
+}
+
+#header nav {
+	position: absolute;
+	right: 20px;
+}
+
+#header nav a div {
+	display: inline-block;
+	margin: 0 20px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0);
+	font-size: 25px;
+	color: #000;
+
+	transition: transform 250ms ease-in-out,
+				color 100ms ease-in-out; 
+}
+
+#header nav a:hover div {
+	color: #0088CC;
+	border-bottom: 2px solid #000;
+	transform: translateY(-10px);
+}
+
+.read-more {
+	width: auto;
+	display: inline-block;
+	font-size: 15px;
+	transition: transform 100ms ease-in-out;
+}
+
+.read-more:hover {
+	font-weight: bold;
+	transform: scale(1.05);
+}
+
+#header {
+	display: flex;
+	height: 100px;
+}
+
+.header-box {
+	position: relative;
+	height: 100%;
+}
+
+#header-left {
+	width: 30%;
+	background-color: #fff;
+}
+
+#header-right {
+	width: 70%;
+	background-color: #EEEEEE;
+}
+
+#header-left #page-title {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+#main {
+	min-height: calc(100vh - 175px);
+	width: 100vw;
+}
+
+#footer {
+	height: 75px;
+	position: relative;
+	background-color: #000;
+}
+
+#footer nav {
+	padding: 5px 0;
+}
+
+#footer nav a div {
+	color: #fff;
+	margin: 0 5px;
+
+	transition: background-color 100ms ease-in-out;
+}
+
+#footer nav a div {
+	padding: 5px 15px;
+}
+
+#footer nav a:hover div {
+	background-color: #fff;
+}
+
+#footer nav a:hover div {
+	color: #000;
+}
+
+#copyright {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.8;
+}
+
+#copyright img {
+	width: 32px;
+	height: 32px;
+	margin-right: 10px;
+}
+
+#copyright p {
+	color: #fff;
+	font-size: 12px;
+}
+
+#author {
+	text-align: center;
+	color: #fff;
+	overflow-y: hidden;
+}
+
+/*.post-image-container img {
+	min-width: 100%;
+	min-height: 100%;
+}*/
+
+/*
+#fullscreen-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+}
+
+#recipe-upload {
+	width: 33%;
+}
+
+#recipe-name {
+	float: right;
+}
+
+#recipe-text {
+    overflow-y: scroll;
+    height: 100px;
+    width: 100%;
+    resize: none;
+}
+*/

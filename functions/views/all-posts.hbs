@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slick Blog | All Posts</title>
+	<link rel="stylesheet" type="text/css" href="css/template.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/basic.css">
+	<link rel="stylesheet" type="text/css" href="css/all-posts.css">
+</head>
+<body>
+	<header id="header" class="box-shadow-outer">
+		<div id="header-left" class="header-box">
+			<a href="../" id="page-title" class="centerY">
+				<h1><strong>Slick Blog</strong></h1>
+			</a>
+		</div>
+		<div id="header-right" class="header-box">
+			<nav class="centerY">
+				<a href=""><div>Home</div></a>
+				<a href="about"><div>About</div></a>
+				<a href="posts-all"><div>All Posts</div></a>
+			</nav>
+		</div>
+	</header>
+
+	<div id="main">
+		<div id="all-posts">
+			<h1>All of my posts</h1>
+
+			<div class="posts-container" style="--height: 600px;">
+				{{#each posts}}
+				<a class="post-container box-shadow-outer" href={{postURL}}>
+					<div class="post-image-container">
+						<img src="img/square.png" class="heightSquare">
+						<div class="post-image-content">
+							<img src={{imageURL}}>
+						</div>
+					</div>
+
+					<div class="post-data">
+						<div class="post-title">{{title}}</div>
+						<div class="post-date">Posted on {{date}}</div>
+						<div class="post-body fade-out" style="--fade-out-color: #fff;">{{body}}</div>
+						<div class="read-more">Continue reading</div>
+					</div>
+				</a>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+
+	<footer id="footer">
+		<nav>
+			<a href=""><div>Home</div></a>
+			<a href="about"><div>About</div></a>
+			<a href="posts-all"><div>All Posts</div></a>
+		</nav>
+
+		<div id="copyright">
+			{{!-- <img class="logo" src="./images/logos/logo_white.png"> --}}
+			<p>&copy; 2018 <i>Slick Blog</i></p>
+		</div>
+
+
+		<div id="author">
+			<p>Website by Markas Aisparas</p>
+		</div>
+	</footer>
+</body>
+</html>

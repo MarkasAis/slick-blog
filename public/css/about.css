@@ -1,0 +1,46 @@
+#main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#about-container {
+	position: relative;
+	width: 60%;
+	min-width: 400px;
+	min-height: 400px;
+	background-color: #fff;
+}
+
+#about-left, #about-right {
+	display: inline-block;
+	height: 100%;
+}
+
+#about-left {
+	width: 70%;
+	padding: 25px;
+}
+
+#about-left p {
+	margin-top: 20px;
+	font-size: 19px;
+}
+
+#about-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 30%;
+	float: right;
+	text-align: center;
+}
+
+#about-container .profile-picture {
+	width: 80%;
+	border-radius: 100%;
+}

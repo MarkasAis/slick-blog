@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	font-family: "FuturaStd-Medium";
+}
+
+button {
+	background-color: rgba(255, 255, 255, 0);
+	border-width: 2px;
+	border-style: solid;
+	font-size: 20px;
+	transition: background 300ms ease-in-out,
+				background-color 300ms ease-in-out,
+				border-color 300ms ease-in-out,
+				color 300ms ease-in-out;
+}
+
+button.light {
+	color: #fff;
+	border-color: #fff;
+}
+
+button.light:hover {
+	background-color: #fff;
+	color: #000;
+	box-shadow: none;
+}
+
+button.dark {
+	color: #000;
+	border-color: #000;
+	transition-duration: 150ms;
+}
+
+button.dark:hover {
+	color: #0088CC;
+	border-color: #0088CC;
+	box-shadow: none;
+}
+
+button.small {
+	padding: 10px 40px;
+}
+
+.text-shadow {
+	text-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+.box-shadow {
+	box-shadow: inset 0 0 25px 5px rgba(0, 0, 0, 0.1), 
+	    			  0 0 25px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box-shadow-outer {
+	box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box-shadow-inner {
+	box-shadow: inset 0 0 25px 5px rgba(0, 0, 0, 0.1);
+}
+
+.centerY {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.heightSquare {
+	display: block;
+	height: 100%;
+	width: auto;
+	visibility: hidden;
+}
+
+.fade-out:before {
+    content: "";
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background: linear-gradient(rgba(0, 0, 0, 0), var(--fade-out-color));
+}
